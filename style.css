@@ -2,8 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
-    background-color: #F3F5FC;
-    ;
+    background-color: #F3F5FC;    
 }
 
 header{
@@ -23,11 +22,16 @@ header{
     margin: 20px;
 }
 
+.seccion1 .contenedor-caja-texto {
+    color: #0A3871;
+}
+
 .seccion1 .contenedor-caja-texto textarea{
     width: 100%;
     height: 200px;
     border: none;
     font-size: 32px;
+    color: #0A3871;
 }
 
 .seccion1 .alerta{
@@ -40,7 +44,6 @@ header{
     flex-direction: column;
     gap: 10px;
     margin-top: 10px;
-    background-color: aqua;
 }
 
 .seccion1 .contenedor-botones .boton-encriptar{
@@ -50,26 +53,113 @@ header{
     color: #F3F5FC;
     border: none;
     border-radius: 15px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .seccion1 .contenedor-botones .boton-encriptar:hover{
     font-weight: bold;
-    background-color: #F3F5FC;
+    background-color: #ffffff;
     color: #0A3871;
 }
     
+.seccion1 .contenedor-botones .boton-desencriptar{
+    width: 100%;
+    height: 15vh;
+    background-color: #ffffff;
+    color: #0A3871;
+    border-style: solid;
+    border-color: #0A3871;
+    border-radius: 15px;
+    border-width: 1px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.seccion1 .contenedor-botones .boton-desencriptar:hover{
+    font-weight: bold;
+    background-color: #0A3871;
+    color: #F3F5FC;
+}
 
 .seccion1 .alerta .texto-minusculas{
     font-size: 12px;
     color: #495057;
+    background-color: #F3F5FC;
 }
 
 .seccion-informativa{
     margin: 20px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .seccion-informativa .contenedor-parrafo{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 100%;
     background-color: #ffffff;
+    border-radius: 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.seccion-informativa .contenedor-parrafo h3,p{
+    background-color: #ffffff;
+    color: #343A40;
+}
+
+.seccion-informativa .contenedor-copiar{
+    display: flex;
+    justify-content: center;
+}
+
+
+.seccion-informativa .contenedor-resultado{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 15px;
+    gap: 50px;
+    
+}   
+
+.seccion-informativa .contenedor-resultado .texto-resultado{
+    padding: 20px;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 15px;
+    text-align: left;
+    gap: 50px;
+    color: #495057;
+    font-size: 20px;
+} 
+
+.seccion-informativa .contenedor-resultado .boton-copiar{
+    width: 100%;
+    height: 15vh;
+    background-color: #ffffff;
+    color: #0A3871;
+    border-style: solid;
+    border-color: #0A3871;
+    border-radius: 20px;
+    border-width: 1px;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: center;
+}
+
+.seccion-informativa .contenedor-resultado .boton-copiar:hover{
+    font-weight: bold;
+    background-color: #0A3871;
+    color: #F3F5FC;
 }
 
 @media screen and (min-width:641px) and (max-width:1007px) /* Tablet */

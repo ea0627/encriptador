@@ -3,6 +3,7 @@ var botonDesencriptar = document.querySelector(".boton-desencriptar")
 var lupa = document.querySelector(".contenedor-lupa")
 var contenedor = document.querySelector(".contenedor-parrafo")
 var resultado = document.querySelector(".texto-resultado")
+var botonCopiar = document.querySelector(".boton-copiar")
 
 botonEncriptar.onclick = encriptar;
 botonDesencriptar.onclick = desencriptar;
