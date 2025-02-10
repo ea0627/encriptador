@@ -164,9 +164,12 @@ header{
 
 @media screen and (min-width:641px) and (max-width:1007px) /* Tablet */
 {   
-    .img-lector{
-        display: block;
-    }
+
+.seccion1 .contenedor-botones{
+    display: flex;
+    flex-direction: row;
+}
+
 }
 
 @media screen and (min-width:1008px) /* PC */
