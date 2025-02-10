@@ -2,331 +2,86 @@
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
-}
-
-body{
-    background-color: #f4f4fc;
+    background-color: #F3F5FC;
+    ;
 }
 
 header{
-    width: auto;
-    height: auto;
+    margin: 5px;
 }
 
-.logo-alura{
-    width: fixed 120px;
-    height: fixed 48px;
-    padding-top: 40px;
-    padding-left: 40px;
-    gap: 40px;
-}
-
-main{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.contenedor-caja-texto {
-    position: relative;
-    left: 100px;
-    top: 100px;
-    padding-left: 100px;
-    width: 680px;
-    height: 400px;
-    color: red;
-}
-
-.cajatexto{
-    width: 577px;
-    height: 48px;
-    top: 168px;
-    left: 240px;
-    border: 0;
-    background-color: #f4f4fc;
-    cursor: pointer;
-    color: #0A3871;
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 48px;
-}
-
-.cajatexto::placeholder{
-    color: #0A3871;
-}
-
-.alerta{
-    position: absolute;
-    top: 750px;
-    left: 150px;
-    display: flex;
-    color: #495057;
-}
-
-.contenedor-botones{
-    position: relative;
-    top: 370px;
-    height: 180px;
-    left: 150px;
-    /* padding-left: 15%; */
-    /* padding-top: 15px; */
-}
-
-.boton-encriptar{
-    width: 320px;
-    height: 67px;
-    border-radius: 24px;
-    background-color: #0a3871;
-    color: white;
-    font-size: 16px;
-    font-weight: 400;
-    border: 0;
-    margin-right: 20px;
-    cursor: pointer;
-}
-
-.boton-desencriptar{
-    width: 320px;
-    height: 67px;
-    border-radius: 24px;
-    background-color: #D8DFE8;
-    color: #0a3871;
-    font-size: 16px;
-    font-weight: 400;
-    border: 1px solid #0a3871;
-    /* margin-right: 20px; */
-    cursor: pointer;
-}
-
-.seccion-informativa{
-    /* display: block; */
-    position: relative;
-    top: 15px; 
-    left: 5px;
-    width: 400px;
-    height: 850px;
-    /* right: 200px; */
-    /* left: 50px; */
-    
-    padding-right: 20px;
-    background-color: #ffffff;
-    box-sizing: border-box;
-    border-radius: 32px;
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.50);
-}
-
-.contenedor-lupa{                   /* Contenedor-munieco */
-    position: relative;
-    width: 400px;
-    height: 400px;
-    left: 40px;
-    top: 283px;
-    box-sizing: border-box;
-    padding-top: 50px;
-}
-
-.contenedor-parrafo{
-    position: absolute;
-    box-sizing: border-box;
-    width: 330px;
-    height: 100px;
-    top: 620px;
-    left: 60px;
-    gap: 16px;
-}
-
-.contenedor-parrafo h3{
-    font-size: 24px;
-    font-weight: 700;
-    text-align: center;
-    color: #343a40;
-}
-
-.contenedor-parrafo p{
-    font-weight: 400;
-    font-size: 16px;
-    text-align: center;
-    color: #495057;
-    padding-top: 20px;
-}
-
-.contenedor-resultado{
-    position: relative;
-    width: 336px;
-    height: 450px;
-    /* top: 72px; */
-    /* left: 1032px; */
-    box-sizing: border-box;
-    /* color: #495057; */
-    /* border-color: #ff0000; */
-    font-size: 25px;
-    margin-left: 25px;
-}
-
-.contenedor-resultado p{
-    color: #495057;
-    font-size: 25px;
-    padding: 2px;
-}
-
- .texto-resultado{
-    width: 330px;
-    height: 775px;
-    top: 72px;
-    left: 1032px;
-    color: #495057;
-    /* border-color: #ff0000; */
-    display: inline;
-} 
-
-.contenedor-copiar{
-    display: flex;
-    position: absolute;
-    bottom: 400px;
-    top: 750px;
-    /*background-color: aqua;*/
-    /*padding-left: 40px; */
-}
-
-.boton-copiar{
-    width: 328px;
-    height: 67px;
-    border-radius: 25px;
-    background-color: #ffffff;
-    color: #0a3871;
-    font-size: 16px;
-    font-weight: 400;
-    border: 1px solid #0a3871;
-    cursor: pointer;
-    position: relative;
-    top: -05px;
-    left: 40px;
-    /* right: 4px; */
-}
-
-.ocultar {
+.img-lector{
     display: none;
 }
 
+.logo-alura{
+    margin: 20px;
+    margin-bottom: 70px;
+}
 
-@media screen and (max-width:880px) {   /* Tablet */
-    body{
-        background-color: aqua;
-    }
-    
-    main {
-        width: 100%;
-        height: 100%;
-        flex-direction: column;
-    }
+.seccion1 {
+    margin: 20px;
+}
 
-    header {
-        width: 100%;
-        height: 100%;
-    }
-    
-    .logo-alura{
-        /* width: 31.09px; */
-        /* height: 50px; */
-        padding-top: 73.42px;
-        padding-left: 40px;
-        gap: 40px;
-    }
+.seccion1 .contenedor-caja-texto textarea{
+    width: 100%;
+    height: 200px;
+    border: none;
+    font-size: 32px;
+}
 
-    .seccion-informativa{
-        /* display: block; */
-        position: relative;
-        top: 0px;
-        bottom: 15px; 
-        left: 75px;
-        right: 75px;
-        width: 680px;
-        height: 233px;
-        /* right: 200px; */
-        /* left: 50px; */
-        
-        /* padding-right: 20px; */
-        background-color: #ffffff;
-        box-sizing: border-box;
-        border-radius: 32px;
-        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.50);
-    }
+.seccion1 .alerta{
+    display: flex;
+    gap: 10px
+}
 
-    .contenedor-botones{
-        position: relative;
-        width: 680px;
-        height: 133px;
-        top: 500px;
-        /* bottom: 500px; */
-        right: 75px;
-        left: 75px;
-        /* padding-left: 15%; */
-        /* padding-top: 15px; */
-    }
+.seccion1 .contenedor-botones{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    background-color: aqua;
+}
 
-    .contenedor-caja-texto {
-        position: relative;
-        left: 40px;
-        /* top: 240px;
-        padding: 100px; */
-        width: 680px;
-        height: 48px;
-        
-    }
+.seccion1 .contenedor-botones .boton-encriptar{
+    width: 100%;
+    height: 15vh;
+    background-color: #0A3871;
+    color: #F3F5FC;
+    border: none;
+    border-radius: 15px;
+}
 
-    .alerta{
-        position: relative;
-        /* width: 239px; */
-        height: 18px;
-        top: 500px;
-        /* bottom: 400px; */
-        left: 100px;
-        gap: 8px;
-        display: flex;
-        color: #495057;
-    }
-
-    .contenedor-resultado{
-        position: absolute;
-        width: 336px;
-        height: 450px;
-        top: 10px;
-        /* left: 1032px; */
-        box-sizing: border-box;
-        /* color: #495057; */
-        /* border-color: #ff0000; */
-        font-size: 25px;
-        margin-left: 25px;
-    }
-
-    .contenedor-parrafo{
-        position: relative;
-        /* box-sizing: border-box; */
-        width: 330px;
-        height: 100px;
-        top: -390px;
-        left: 180px;
-        /* gap: 16px; */
-    }
-
-    .contenedor-copiar{
-        /* display: flex; */
-        position: relative;
-        
-        /* bottom: 400px; */
-        top: 100px;
-        /*background-color: aqua;*/
-        right: 170px;
-        left: 170px ;
-        /*padding-left: 40px; */
-    }   
-
-
-
+.seccion1 .contenedor-botones .boton-encriptar:hover{
+    font-weight: bold;
+    background-color: #F3F5FC;
+    color: #0A3871;
+}
     
 
-    
-    
+.seccion1 .alerta .texto-minusculas{
+    font-size: 12px;
+    color: #495057;
+}
+
+.seccion-informativa{
+    margin: 20px;
+}
+
+.seccion-informativa .contenedor-parrafo{
+    background-color: #ffffff;
+}
+
+@media screen and (min-width:641px) and (max-width:1007px) /* Tablet */
+{   
+    .img-lector{
+        display: block;
+    }
+}
+
+@media screen and (min-width:1008px) /* PC */
+{   
+    .img-lector{
+        display: block;
+    }
 }
