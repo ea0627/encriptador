@@ -1,8 +1,7 @@
 var botonEncriptar = document.querySelector(".boton-encriptar");
 var botonDesencriptar = document.querySelector(".boton-desencriptar");
-var lupa = document.querySelector(".contenedor-lupa");
-var parrafo = document.querySelector(".contenedor-parrafo");
-var resultado = document.querySelector(".texto-resultado");
+var lupa = document.querySelector(".contenedro-a-ocultar");
+var resultado = document.querySelector(".contenedor-resultado");
 var botonCopiar = document.querySelector(".boton-copiar");
 
 botonEncriptar.onclick = encriptar;
@@ -10,7 +9,7 @@ botonDesencriptar.onclick = desencriptar;
   
 function encriptar() {
     ocultarAdelante();
-    // mostrarAdelante();
+    mostrarAdelante();
     var cajatexto = recuperarTexto()
     resultado.textContent = encriptarTexto(cajatexto);
 }
@@ -19,6 +18,7 @@ function desencriptar() {
     ocultarAdelante();
     var cajatexto = recuperarTexto()
     resultado.textContent = desencriptarTexto(cajatexto);
+    // document.querySelector(".contenedor-resultado").style.display = "block";
 }
 
 function recuperarTexto() {
@@ -28,11 +28,12 @@ function recuperarTexto() {
 
 function ocultarAdelante() {
     lupa.classList.add("ocultar");
-    parrafo.classList.add("ocultar");
 }
 
 function mostrarAdelante() {
     resultado.classList.add("mostrar");
+    document.querySelector(".contenedor-resultado").style.display = "block";
+    // document.querySelector(".boton-copiar").style.display = "block";
 }
 
 function pruebaBotonEncriptar() {
@@ -114,7 +115,7 @@ function ocultar(id){
 }
 
 function mostrar(id){
-    var elemento = document.getElementsByClassName(id);
+    var elemento = document.getElementById(id);
     elemento.style.display = "block";
 }
 
@@ -123,4 +124,4 @@ const btnCopiar = document.querySelector(".boton-copiar");  /* boton copiar */
     var contenido = document.querySelector(".texto-resultado").textContent;
     navigator.clipboard.writeText(contenido);
     /* console.log("hola");  */
-});
+    });

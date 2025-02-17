@@ -101,7 +101,7 @@ main{
 }
 
 .seccion-informativa{
-    /* display: block; */
+    display: block;
     position: relative;
     top: 15px; 
     left: 5px;
@@ -153,6 +153,7 @@ main{
 }
 
 .contenedor-resultado{
+    display: none;
     position: relative;
     width: 336px;
     height: 450px;
@@ -289,6 +290,7 @@ main{
     }
 
     .contenedor-resultado{
+        /* display: none; */
         position: absolute;
         width: 336px;
         height: 450px;
@@ -302,10 +304,10 @@ main{
     }
 
     .contenedor-parrafo{
-        position: relative;
+        /* position: relative; */
         /* box-sizing: border-box; */
-        width: 330px;
-        height: 100px;
+        /* width: 330px; */
+        /* height: 100px; */
         top: -390px;
         left: 180px;
         /* gap: 16px; */
