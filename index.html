@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">                                         <!--Diseño responsivo-->
-    <!--  <link rel="stylesheet" href="01/reset.css"> -->                                             <!--Reset CSS-->
-    <link rel="stylesheet" href="style.css">                                              <!--Mi archivo de estilos CSS-->
+    <link rel="stylesheet" href="01/reset.css">                                             <!--Reset CSS-->
+    <link rel="stylesheet" href="style.css">                                              
+    <!-- <link rel="stylesheet" href="style-.css"> -->
     <link href="https://fonts.google.com/share?selection.family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
     
     <title>Encriptador de texto - Alura Challenges ONE</title>
@@ -15,31 +16,43 @@
     </header>
 
     <main>
-        <section class="seccion1">
-            <div class="contenedor-caja-texto">
-                <textarea placeholder="Ingrese el texto aqui" class="cajatexto"></textarea>
-            </div>
-            <div class="alerta">
-                <img src="Imagenes/alerta.svg" alt="alerta">
-                <p class="texto-minusculas"> Solo letras minusculas sin acentos</p>
-            </div>
-            <div class="contenedor-botones">
-                <input type="button"  class="boton-encriptar" value="Encriptar">             <!--btn-encriptar-->
-                <input type="button" class="boton-desencriptar" value="Desencriptar">        <!--btn-desencriptar-->
-            </div>
-        </section>
-        <section class="seccion-informativa">                                                <!--seccion2-->
-            <div class="contenedor-lupa">                                                    <!--contenedormunieco -->
-                <img class="img-lector" src="Imagenes/lupa.svg" alt="lupa">
-            </div>
-            <div class="contenedor-parrafo">
-                <h3>Ningun mensaje fue <br> encontrado</h3>
-                <p>Ingrese el texto que desea encriptar o desencriptar</p>
-            </div>
-            <div class="contenedor-resultado">
-                <p class="texto-resultado"></p>
-                <input type="button" class="boton-copiar" value="Copiar">
-            </div>
+        <section class="todo">
+
+            <section class="seccion1">              
+                
+                <div class="contenedor-caja-texto">
+                    <textarea placeholder="Ingrese el texto aqui" class="cajatexto"></textarea>
+                </div>
+                
+                <div class="alerta">
+                    <img src="Imagenes/alerta.svg" alt="alerta">
+                    <p class="texto-minusculas"> Solo letras minusculas sin acentos</p>
+                </div>
+
+                <div class="contenedor-botones">
+                    <input type="button"  class="boton-encriptar" value="Encriptar">             <!--btn-encriptar-->
+                    <input type="button" class="boton-desencriptar" value="Desencriptar">        <!--btn-desencriptar-->
+                </div>
+
+            </section>
+
+            <section class="seccion-informativa">
+                                                               <!--seccion2-->
+                <div class="contenedor-lupa">
+                    <img class="img-lector" src="Imagenes/lupa.svg" alt="lupa">
+                </div>
+
+                <div class="contenedor-parrafo">
+                    <h3>Ningun mensaje fue <br> encontrado</h3>
+                    <p>Ingrese el texto que desea encriptar o desencriptar</p>
+                </div>
+
+                <div class="contenedor-resultado">
+                    <p class="texto-resultado"></p>
+                    <input type="button" class="boton-copiar" value="Copiar">
+                </div>
+
+            </section>
 
         </section>
         
