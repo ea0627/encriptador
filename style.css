@@ -121,8 +121,8 @@ header{
 }
 
 .seccion-informativa .contenedor-resultado{
+    position: relative;
     /* display: none; */
-    /* display: flex; */
     flex-direction: column;
     padding: 20px;
     height: 100%;
@@ -144,6 +144,7 @@ header{
 } 
 
 .seccion-informativa .contenedor-resultado .boton-copiar{
+    display: block;
     width: 100%;
     height: 15vh;
     background-color: #ffffff;
@@ -249,7 +250,7 @@ header{
         width: 40%;
         height: 500px;
         /* padding: 10px; */
-        background-color: aqua;
+        /* background-color: aqua; */
         flex-direction: column;
     }
 
@@ -272,16 +273,19 @@ header{
 
     .todo .seccion-informativa .contenedor-resultado{
         position: relative;
-        /* display: none; */
+        /* display: flex; */
         align-items: center;
         /* background-color: darkkhaki; */
         width: 70%;
         height: 50%;
+        justify-content: center;
     }
 
     .todo .seccion-informativa .contenedor-resultado .boton-copiar{
-        /* display: block; */
         position: relative;
+        align-self: center;
+        border-radius: 25px;
+        display: block;
         border-radius: 25px;
         width: 300px;
         height: 60px;

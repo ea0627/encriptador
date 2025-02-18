@@ -12,6 +12,8 @@ function encriptar() {
     mostrarAdelante();
     var cajatexto = recuperarTexto()
     resultado.textContent = encriptarTexto(cajatexto);
+    document.querySelector(".contenedor-resultado").innerHTML += '<input type="button" class="boton-copiar" value="Copiar">';
+
 }
 
 function desencriptar() {
@@ -32,12 +34,9 @@ function ocultarAdelante() {
 
 function mostrarAdelante() {
     resultado.classList.add("mostrar");
-    document.querySelector(".contenedor-resultado").style.display = "block";
+    document.querySelector(".contenedor-resultado").style.display = "flex";
     botonCopiar.classList.add("mostrar");
 
-    document.querySelector(".contenedor-resultado").innerHTML = `<p>${resultado}</p>
-    <input type="button" class="boton-copiar" value="Copiar">
-`;
 }
 
 function pruebaBotonEncriptar() {
@@ -127,5 +126,5 @@ const btnCopiar = document.querySelector(".boton-copiar");  /* boton copiar */
     btnCopiar.addEventListener("click", copiar = () => {
     var contenido = document.querySelector(".texto-resultado").textContent;
     navigator.clipboard.writeText(contenido);
-    /* console.log("hola");  */
+    console.log("hola");
     });
