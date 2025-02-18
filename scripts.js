@@ -1,6 +1,6 @@
 var botonEncriptar = document.querySelector(".boton-encriptar");
 var botonDesencriptar = document.querySelector(".boton-desencriptar");
-var lupa = document.querySelector(".contenedro-a-ocultar");
+var lupa = document.querySelector(".contenedor-a-ocultar");
 var resultado = document.querySelector(".contenedor-resultado");
 var botonCopiar = document.querySelector(".boton-copiar");
 
@@ -33,7 +33,11 @@ function ocultarAdelante() {
 function mostrarAdelante() {
     resultado.classList.add("mostrar");
     document.querySelector(".contenedor-resultado").style.display = "block";
-    // document.querySelector(".boton-copiar").style.display = "block";
+    botonCopiar.classList.add("mostrar");
+
+    document.querySelector(".contenedor-resultado").innerHTML = `<p>${resultado}</p>
+    <input type="button" class="boton-copiar" value="Copiar">
+`;
 }
 
 function pruebaBotonEncriptar() {
