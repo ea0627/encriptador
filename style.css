@@ -120,12 +120,6 @@ header{
     color: #343A40;
 }
 
-.seccion-informativa .contenedor-copiar{
-    display: flex;
-    justify-content: center;
-}
-
-
 .seccion-informativa .contenedor-resultado{
     /* display: none; */
     /* display: flex; */
@@ -205,7 +199,7 @@ header{
     .todo .seccion1{
         display: flex;
         width: 60%;
-        height: 1000px;
+        height: 500px;
         padding: 10px;
         /* background-color: rgb(30, 255, 0); */
         flex-direction: column;
@@ -252,35 +246,42 @@ header{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 30%;
-        height: 1000px;
-        padding: 10px;
-        /* background-color: aqua; */
+        width: 40%;
+        height: 500px;
+        /* padding: 10px; */
+        background-color: aqua;
         flex-direction: column;
     }
 
-    .img-lector{
+    .todo .seccion-informativa .contenedor-a-ocultar .contenedor-lupa{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .todo .seccion-informativa .contenedor-a-ocultar .contenedor-lupa .img-lector{
         display: block;
-        /* position: relative; */
     }
 
     .todo .seccion-informativa .contenedor-parrafo{
-        position: relative;
-        display: block;
-        width: 100%;
-        /* background-color: #343A40; */
+        /* position: relative; */
+        display: flex;
+        align-items: center;
+        height: 20%;
     }
 
     .todo .seccion-informativa .contenedor-resultado{
         position: relative;
         /* display: none; */
         align-items: center;
-        justify-content: center;
         /* background-color: darkkhaki; */
-        width: 100%;
+        width: 70%;
+        height: 50%;
     }
 
     .todo .seccion-informativa .contenedor-resultado .boton-copiar{
+        /* display: block; */
+        position: relative;
         border-radius: 25px;
         width: 300px;
         height: 60px;

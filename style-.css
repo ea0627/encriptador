@@ -105,8 +105,9 @@ header{
     position: relative;
     top: 15px; 
     left: 5px;
-    width: 400px;
-    height: 850px;
+    background-color: #ff0000;
+    /* width: 400px;
+    height: 850px; */
     /* right: 200px; */
     /* left: 50px; */
     
@@ -202,16 +203,13 @@ header{
 }
 
 
-@media screen and (max-width:880px) {   /* Tablet */
-    body{
-        background-color: aqua;
-    }
+@media screen and (min-width: 576px) and (max-width: 991px) {   /* Tablet */
     
-    main {
+    /* .todo {
         width: 100%;
         height: 100%;
-        flex-direction: column;
-    }
+        flex-direction: column; */
+    
 
     header {
         width: 100%;
@@ -302,5 +300,23 @@ header{
     .boton-copiar{
         display: inline;
         
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .todo .seccion-informativa{
+        background-color: chartreuse;
+        display: flex;
+        align-content: center;
+        height: 70%;
+    }
+
+    .todo .seccion-informativa .contenedor-a-ocultar{
+        background-color: #ff0000;
+    }
+
+    .todo .seccion-informativa .contenedor-a-ocultar .contenedor-parrafo{
+        background-color: #ff0000;
+        height: 50%;
     }
 }
