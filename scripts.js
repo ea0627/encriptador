@@ -3,6 +3,7 @@ var botonDesencriptar = document.querySelector(".boton-desencriptar");
 var lupa = document.querySelector(".contenedor-a-ocultar");
 var resultado = document.querySelector(".contenedor-resultado");
 var botonCopiar = document.querySelector(".boton-copiar");
+// var textoEncriptado = document.querySelector(".texto-resultado");
 
 botonEncriptar.onclick = encriptar;
 botonDesencriptar.onclick = desencriptar;
@@ -13,14 +14,13 @@ function encriptar() {
     var cajatexto = recuperarTexto()
     resultado.textContent = encriptarTexto(cajatexto);
     document.querySelector(".contenedor-resultado").innerHTML += '<input type="button" class="boton-copiar" value="Copiar">';
-
+    console.log("Texto a copiar:", resultado);
 }
 
 function desencriptar() {
     ocultarAdelante();
     var cajatexto = recuperarTexto()
     resultado.textContent = desencriptarTexto(cajatexto);
-    // document.querySelector(".contenedor-resultado").style.display = "block";
 }
 
 function recuperarTexto() {
@@ -122,9 +122,16 @@ function mostrar(id){
     elemento.style.display = "block";
 }
 
-const btnCopiar = document.querySelector(".boton-copiar");  /* boton copiar */
-    btnCopiar.addEventListener("click", copiar = () => {
-    var contenido = document.querySelector(".texto-resultado").textContent;
-    navigator.clipboard.writeText(contenido);
-    console.log("hola");
-    });
+// Boton Copiar
+
+document.addEventListener("click", function (event) {
+    if (event.target.classList.contains("boton-copiar")) {
+        var contenido = document.querySelector(".contenedor-resultado").textContent;
+        navigator.clipboard.writeText(contenido).then(() => {
+            console.log("Texto copiado:", contenido);
+            alert("Texto copiado al portapapeles.");
+        }).catch(err => {
+            console.error("Error al copiar: ", err);
+        });
+    }
+});
