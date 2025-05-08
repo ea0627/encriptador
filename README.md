@@ -36,7 +36,7 @@ El desencriptador simplemente revierte esas transformaciones.
 
 ## 📸 Captura de pantalla
 
-> *(Agrega aquí una imagen o GIF de la aplicación funcionando)*
+> (assets/captura.png)
 
 📁 encriptador/
 ├── index.html
