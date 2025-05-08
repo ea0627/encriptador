@@ -1,65 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">                                         <!--Diseño responsivo-->
-    <link rel="stylesheet" href="reset.css">                                             <!--Reset CSS-->
-    <link rel="stylesheet" href="style.css">                                              
-    <link href="https://fonts.google.com/share?selection.family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
-    
-    <title>Encriptador de texto - Alura Challenges ONE</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Encriptador</title>
+  <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="icon" href="favicon.png" />
 </head>
 <body>
-    <header>
-        <img class="logo-alura" src="./Imagenes/vector.png" alt="logo-alura">
-    </header>
+  <header class="header">
+    <img src="assets/logo-alura.svg" alt="Logo de Alura" class="logo" />
+  </header>
 
-    <main>
-        <section class="todo">
+  <main class="container">
+    <section class="left-panel">
+      <textarea
+        id="input-text"
+        class="input-text"
+        placeholder="Ingrese el texto aquí"
+      ></textarea>
 
-            <section class="seccion1">              
-                
-                <div class="contenedor-caja-texto">
-                    <textarea placeholder="Ingrese el texto aqui" class="cajatexto"></textarea>
-                </div>
-                
-                <div class="alerta">
-                    <img src="Imagenes/alerta.svg" alt="alerta">
-                    <p class="texto-minusculas"> Solo letras minusculas sin acentos</p>
-                </div>
+      <div class="options">
+        <p class="warning">
+          <img src="assets/icono-exclamacion.svg" alt="Advertencia" />
+          Solo letras minúsculas y sin acentos
+        </p>
+        <div class="buttons">
+          <button id="encrypt-btn" class="btn primary">Encriptar</button>
+          <button id="decrypt-btn" class="btn secondary">Desencriptar</button>
+        </div>
+      </div>
+    </section>
 
-                <div class="contenedor-botones">
-                    <input type="button"  class="boton-encriptar" value="Encriptar">             <!--btn-encriptar-->
-                    <input type="button" class="boton-desencriptar" value="Desencriptar">        <!--btn-desencriptar-->
-                </div>
+    <section class="right-panel" id="output-panel">
+      <div class="contenedor-a-ocultar">
+        <img src="assets/muneco.svg" alt="Muñeco triste" class="imagen-muneco" />
+        <h3>Ningún mensaje fue encontrado</h3>
+        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+      </div>
 
-            </section>
+      <div class="contenedor-resultado hidden">
+        <p class="texto-resultado"></p>
+        <button class="boton-copiar hidden">Copiar</button>
+      </div>
+    </section>
+  </main>
 
-            <section class="seccion-informativa">
-                <!--seccion2-->
-                <div class="contenedor-a-ocultar">
-                    <div class="contenedor-lupa">
-                        <img class="img-lector" src="Imagenes/lupa.svg" alt="lupa">
-                    </div>
+  <footer class="footer">
+    <p>&copy; 2025 - Desarrollado por Eduardo 🤖</p>
+  </footer>
 
-                    <div class="contenedor-parrafo">
-                        <h3>Ningun mensaje fue <br> encontrado</h3>
-                        <p>Ingrese el texto que desea encriptar o desencriptar</p>
-                    </div>
-                </div>
-
-                <div class="contenedor-resultado">
-                    <p class="texto-resultado"></p>
-                    <input type="button" class="boton-copiar" value="Copiar">
-                </div>
-
-            </section>
-
-        </section>
-        
-        <script src="scripts.js"></script>
-    </main>
-
-    
+  <script src="scripts.js"></script>
 </body>
 </html>
