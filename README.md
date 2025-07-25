@@ -36,7 +36,7 @@ El desencriptador simplemente revierte esas transformaciones.
 
 ## 📸 Captura de pantalla
 
-![Vista previa](./assets/screenshot.png)
+![Vista previa](./assets/encriptador.png)
 
 ## 📁 Estructura del Proyecto
 
