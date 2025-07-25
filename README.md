@@ -36,17 +36,21 @@ El desencriptador simplemente revierte esas transformaciones.
 
 ## 📸 Captura de pantalla
 
-> (assets/captura.png)
+> (assets/encriptador.png)
 
-📁 encriptador/
-├── index.html
+## 📁 Estructura del Proyecto
+
+```
+encriptador/
+├── assets/              # Imágenes e íconos
 ├── css/
 │   └── style.css
 ├── js/
 │   └── script.js
-├── README.md
+├── index.html
+└── README.md
+```
 
----
 
 ## 🧪 ¿Cómo usarlo?
 
@@ -78,6 +82,16 @@ Puedes ver el encriptador funcionando aquí:
 Eduardo A.
 Frontend Developer Jr.
 📫 LinkedIn | Instagram | Portafolio
+
+## 📌 Notas adicionales
+
+- Proyecto desarrollado como parte de un desafío de Alura Latam.
+- Se enfoca en lógica condicional, manipulación de strings y eventos del DOM.
+- Mejora sugerida: permitir compatibilidad con teclas del teclado o animaciones.
+
+---
+
+> Gracias por probar esta aplicación. ¡Sigue encriptando y aprendiendo! 🔐💻
 
 ## 📄 Licencia
 Este proyecto está bajo la licencia MIT.
